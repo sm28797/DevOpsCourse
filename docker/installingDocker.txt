@@ -18,3 +18,6 @@ sudo groupadd docker
 
 Add user to the Docker group -
 sudo usermod -aG docker $USER
+
+Log back and log back in so group membership is re-evaluated - 
+newgrp docker 
