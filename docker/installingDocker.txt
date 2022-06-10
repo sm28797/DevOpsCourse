@@ -1,18 +1,14 @@
 Update the apt packages -
 sudo apt-get update
 
-Install packages to allow apt to use a repository over https -
-sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
+Install docker - 
+sudo apt install docker.io
 
-Add docker's official GPG key -
-curl -fsSl https://download.docker.com/linux/ubutnu/gpg | sudo apt-key add -
+Install all dependancy - 
+sudo snap install docker
 
-Adding docker organisation as a source of software for our computer
-sudo apt-add-repository "deb |arch=amd64 https://download.docker.om/linux/ubuntu $(lsb_release -cs) release stable"
-
-sudo apt-get update
-
-sudo apt-get install docker-ce
+Check version -
+docker --version
 
 
 Post installation guide - 
